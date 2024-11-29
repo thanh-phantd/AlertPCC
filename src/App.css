@@ -1,7 +1,171 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-title, .app-title-note, .title {
+  color: var(--main-color);
+}
+
+.app-title {
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+.app-title-note {
+  margin: 0px;
+  font-size: 14px;
+}
+.title {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.alert-pcc-form {
+  width: 80%;
+  margin-top: 28px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-container {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 50px;
+}
+
+.content select {
+  margin-left: 5px;
+}
+
+.covid-vaccines-container .content, .covid-infection-container .content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px 30px;
+  align-items: center;
+}
+.covid-vaccines-container ol {
+  list-style: lower-alpha;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  align-items: center;
+}
+.covid-vaccines-container ol li {
+  display: inline;
+}
+.covid-vaccines-container input {
+  width: 30px;
+  padding: 10px 5px;
+  text-align: center;
+  margin-left: 10px;
+  border: 1px solid #BCE0FD;
+  border-radius: 4px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.covid-vaccines-container .content p {
+  font-style: italic;
+}
+
+.covid-infection-container .content {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.covid-infection-container .age-input, .covid-infection-container .bmi-input, .covid-infection-container .hopitalization-input {
+  border: 1px solid #BCE0FD;
+  border-radius: 4px;
+  width: 50px;
+  padding: 10px 5px;
+  margin-left: 10px;
+}
+
+.comorbidity-container {
+  margin-left: 30px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 30px;
+}
+
+.covid-infection-container .sub-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  row-gap: 20px;
+}
+.covid-infection-container .sub-content .line1 {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.covid-infection-container .diagnosis-container, .covid-infection-container .medication-container {
+  margin-top: 10px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.census-container {
+  width: 100%;
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px 20px;
+}
+.census-container input {
+  border: 1px solid #BCE0FD;
+  border-radius: 4px;
+  width: 90px;
+  height: 40px;
+  text-align: center;
+}
+.census-container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+
+
+.predict-button {
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: white;
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+}
+.predict-button:hover {
+  background-color: var(--main-color-2);
+}
+button:focus {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
